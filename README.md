@@ -5,6 +5,9 @@ Repositorio da Cadeira de Software Embarcado do Mestrado de Eng. Eletrônica - U
 
 * Ambientação com Arduino
   * Experiência com circuitos - LED e Resistor
+  * Circuito Pull UP e PULL DOWN
+  * Bounce e Debounce
+  * Função millis()
   
 
 <!--
