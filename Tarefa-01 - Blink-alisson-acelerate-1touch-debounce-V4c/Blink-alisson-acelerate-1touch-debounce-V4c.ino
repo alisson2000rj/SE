@@ -5,8 +5,8 @@
  *  - material encontrado no canal youtube brincando com ideas - Programacao com arduino aula 13 - delay e millis
  *  - http://www.arduino.cc/en/Tutorial/Debounce
  *  
- * versao - 4b  *** numero das versoes seguem o padrao "numeroletra". Ex.: 1a Sendo que a letra varia de a-e;   
- * 03/09/2018 - 12:34pm
+ * versao - 4c  *** numero das versoes seguem o padrao "numeroletra". Ex.: 1a Sendo que a letra varia de a-e;   
+ * 03/09/2018 - 18:34pm
  *
 Descrição:
 
@@ -53,7 +53,7 @@ unsigned long lastDebounceTime = 0;  // the last time the output pin was toggled
 unsigned long debounceDelay = 50;    // tempo de debounce 50ms (0,5s). Se o tempo dest avariavel for maior que o tempo que se leva pressionando o pushbutton o a condicao nunca sera satisfeita.
 
 // bloco de variaveis de controle da frequencia com que o LED piscara
-int spd = 2000; // frequencia com que o led pisca. Iniciada com 2000ms ou 2s (ciclo completa aceso e apagado). 
+int spd = 1000; // frequencia com que o led pisca. Iniciada com 1000ms ou 1s. Ciclo completo aceso/apagado com 2s. 
 unsigned long lasttempoled = 0; // acumula o tempo 
 
 // bloco de variaveis de controle que farao com que o LED permaceca acesso ou pisque intermitente
@@ -109,9 +109,9 @@ void loop()
       buttonStateup = readingUP;
       // bloco 5 - AUMENTA a velocidade com que o LED pisca. Se o botao buttonUP for pressionado (HIGH) e spd for menor 1000ms (1s). Condicao e atendida na segunda rodada apos pressionamento do botao.
       // ou seja quando o botao retornar ao estao HIGH (1).
-      if ((buttonStateup == HIGH)&& (spd>200))
+      if ((buttonStateup == HIGH)&& (spd>100))
       {
-        spd=spd-200;
+        spd=spd-100;
         Serial.print("spd: ");
         Serial.println(spd);
       }
@@ -127,9 +127,9 @@ void loop()
     {
       buttonStatedown = readingDOWN;
       // bloco 7 - DIMINUI a velocidade com que o LED pisca. Se o botao buttonDOWN for pressionado (HIGH) e spd for menor 1000ms (1s).
-      if ((buttonStatedown == HIGH)&& (spd<2000))
+      if ((buttonStatedown == HIGH)&& (spd<1000))
       {
-        spd=spd+200;
+        spd=spd+100;
         Serial.print("spd: ");
         Serial.println(spd);
       }
@@ -155,15 +155,15 @@ void loop()
   {
     // bloco 11 - responsavel pela frequencia com que o LED pisca.
     // Referencia - site brincando com ideas - video aula programacao com arduino - aula 13 - delay e millis
-    if((millis() - lasttempoled) >= spd/2)
-    {
-      digitalWrite(13, HIGH);
-    }
-    if((millis() - lasttempoled) < spd/2)
+    if((millis() - lasttempoled) < spd) // tempo menor que 1000ms retorna LED apagado 
     {
       digitalWrite(13, LOW);
     }
-    if((millis() - lasttempoled) >= spd)
+    if((millis() - lasttempoled) >= spd) // tempo maior que 1000ms retorna LED aceso
+    {
+      digitalWrite(13, HIGH);
+    }
+    if((millis() - lasttempoled) >= spd*2) // tempo maior que 2000ms registra o tempo em lastempoled para uso na proxima rodada
     {
      lasttempoled = millis();
     }
