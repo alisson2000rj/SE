@@ -5,7 +5,7 @@
  *  - material encontrado no canal youtube brincando com ideas - Programacao com arduino aula 13 - delay e millis
  *  - http://www.arduino.cc/en/Tutorial/Debounce
  *  
- * versao - 4c  *** numero das versoes seguem o padrao "numeroletra". Ex.: 1a Sendo que a letra varia de a-e;   
+ * versao - 4d  *** numero das versoes seguem o padrao "numeroletra". Ex.: 1a Sendo que a letra varia de a-e;   
  * 03/09/2018 - 18:34pm
  *
 Descrição:
@@ -41,16 +41,16 @@ Descrição:
 #define ledPin 13     // indica o pino do arduino que enviara sinal para o LED.
 
 // bloco de declaracao de variaveis de controle de estado
-int ledState = HIGH;         // the current state of the output pin
-int buttonStatedown = HIGH; // Registra o ultimo estado do buttonDOWN quando satifeita a condicao  the current reading from the input pin
-int buttonStateup = HIGH;
-int lastButtonStateup = HIGH;   // the previous reading from the input pin
-int lastButtonStatedown = HIGH;   // the previous reading from the input pin
+int ledState = HIGH;         // Estado inicial do LED
+int buttonStatedown = HIGH; // Registra o ultimo estado do buttonDOWN quando satifeita a condicao  
+int buttonStateup = HIGH; // Registra o ultimo estado do buttonUP quando satifeita a condicao  
+int lastButtonStateup = HIGH;   // Registra o ultimo estado do lastButtonStateUP quando satifeita a condicao 
+int lastButtonStatedown = HIGH;   // Registra o ultimo estado do lastButtonStateDOWN quando satifeita a condicao 
 
 
-// Para variaveis de tempo foi utilizado unsigned long milliseconds, retornara o maior numero que pode ser gravado como um inteiro
-unsigned long lastDebounceTime = 0;  // the last time the output pin was toggled
-unsigned long debounceDelay = 50;    // tempo de debounce 50ms (0,5s). Se o tempo dest avariavel for maior que o tempo que se leva pressionando o pushbutton o a condicao nunca sera satisfeita.
+// Para variaveis de tempo foi utilizado unsigned long, pois aumenta o valor positivo que a variavel pode armazenar
+unsigned long lastDebounceTime = 0;  // Ultimo registro do tempo do debounce
+unsigned long debounceDelay = 50;    // tempo de debounce 50ms (0,5s). Se o tempo desta variavel for maior que o tempo que se leva pressionando o pushbutton a condicao nunca sera satisfeita.
 
 // bloco de variaveis de controle da frequencia com que o LED piscara
 int spd = 1000; // frequencia com que o led pisca. Iniciada com 1000ms ou 1s. Ciclo completo aceso/apagado com 2s. 
@@ -77,7 +77,7 @@ void setup()
 
 void loop()
 {
-  // Bloco 1 - estado inicial, circuito alimentado pelo 5v, botoes em repouso, variaveis recebem sinal HIGH(1). Quando os botoes são pressionados o as variaveis recebem LOW(0).
+  // Bloco 1 - estado inicial, circuito alimentado pelo 5v, botoes em repouso, variaveis recebem sinal HIGH(1). Quando os botoes são pressionados as variaveis recebem LOW(0).
   int readingUP = digitalRead(buttonPinup);
   int readingDOWN = digitalRead(buttonPindown);
   /*
