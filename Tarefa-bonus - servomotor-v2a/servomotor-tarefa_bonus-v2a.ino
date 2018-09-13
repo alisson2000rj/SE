@@ -22,13 +22,14 @@
 
 // bloco de declaracao de constantes que indicam quais pinos do circuito do arduino serao utilizados 
 #define pinoServo 9 // pino utilizado para enviar dados ao servo motor 
-#define pinobutton 7 // pino de controle que recebe sinal quando o pushbutton e pressionado. 
+#define pinobutton 7 // pino de controle que recebe sinal quando o pushbutton e pressionado.
+#define inicio 20 
 
 // cria o objeto servo
 Servo myservo;  
 
 // bloco de variaveis
-int pos = 30; // inicia a variavel de posicao do servo motor em 30 graus    
+int pos = inicio; // inicia a variavel de posicao do servo motor em 30 graus    
 int buttonState = HIGH;
 int buttonLastState = HIGH;
 int reading = HIGH;
@@ -40,6 +41,7 @@ unsigned long debounceDelay = 50;  // tempo de debounce 50ms (0,5s). Se o tempo 
 void setup() {
   myservo.attach(pinoServo);  // atribui o pino do arduino ao objeto do servo motor
   pinMode(pinobutton, INPUT); // atribui o pino do arduino ao pushbutton
+  myservo.write(pos);
 }
 void loop() {
   
@@ -70,9 +72,9 @@ void loop() {
         pos += 20; // atribui inicialmente 20 graus e vai somando de 20 em 20
         myservo.write(pos); // envia comando para o servo motor girar 
         delay(15); // espera 15 milessimos de segundo para que o servo possa procura a posição
-        if (pos >= 150) // quando a variavel for incrementada e atingir o valor 150 o servo motor retornara para a posicao de grau 30
+        if (pos >= 160) // quando a variavel for incrementada e atingir o valor 150 o servo motor retornara para a posicao de grau 30
         {
-          pos = 30; // atribui valor de 30 graus a variavel
+          pos = inicio; // atribui valor de 30 graus a variavel
           myservo.write(pos); // envia comando para o servo motor girar 
           delay(15); // espera 15 milessimos de segundo para que o servo possa procura a posição
         }
