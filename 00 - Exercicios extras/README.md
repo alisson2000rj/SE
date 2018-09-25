@@ -1,5 +1,4 @@
-# SE
-Exercícios Extras 
+# Exercícios Extras 
 
 ---
 Exemplos encontrados na Internet
