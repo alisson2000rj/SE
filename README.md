@@ -8,6 +8,8 @@ Repositorio da Cadeira de Software Embarcado do Mestrado de Eng. Eletrônica - U
   * Circuito Pull UP e PULL DOWN
   * Bounce e Debounce
   * Função millis()
+  * Display 7 segmentos
+  * Softpot - potenciômetro sensível ao toque
   
 
 <!--
