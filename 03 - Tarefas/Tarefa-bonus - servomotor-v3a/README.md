@@ -1,6 +1,6 @@
 # Servo Motor com dois pushbutton
 
-![](./ervomotor-tarefa_bonus-v3a.jpg)
+![](./servomotor-tarefa_bonus-v3a.jpg)
   
 
 <!--
