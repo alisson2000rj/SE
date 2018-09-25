@@ -1,6 +1,6 @@
 # Servo Motor com um pushbutton
 
-![](https://github.com/alisson2000rj/SE/blob/master/Tarefa-bonus%20-%20servomotor-v2a/servomotor-tarefa_bonus-v2a.jpg)
+![](./servomotor-tarefa_bonus-v2a.jpg)
   
 
 <!--
