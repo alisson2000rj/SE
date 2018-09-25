@@ -1,7 +1,6 @@
 
 # Softpot e display 7 seg
 
-<<<<<<< HEAD
 ![](./Display-7-segmentos.jpg)
  
 
