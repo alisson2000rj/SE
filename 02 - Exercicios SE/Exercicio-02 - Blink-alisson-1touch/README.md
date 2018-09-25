@@ -1,7 +1,7 @@
 
 # Circuito utilizando PULL UP
 
-![](http://./blink-alisson-1touch.jpg)
+![](./Blink-alisson-1touch.jpg)
 
   
 
