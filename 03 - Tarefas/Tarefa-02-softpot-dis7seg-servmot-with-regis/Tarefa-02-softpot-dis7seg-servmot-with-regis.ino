@@ -195,8 +195,7 @@ void loop()
       }
     }
   }
-  Serial.print("pos: ");
-  Serial.println(pos);
+  
   // *** bloco 6 *** - registra o ultimo estado do botao pushbuttonUP em buttonLastStateUP e pushbuttonDN em buttonLastStateDN
   buttonLastStateUP = (PINB & (1<<4));
   buttonLastStateDN = (PINB & (1<<3));
