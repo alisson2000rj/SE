@@ -17,8 +17,9 @@ Tarefas de SE executadas:
 	do softpot (tripot sensível ao toque). Possui um servo motor controlado por pressionamento de dois botões
 	pushbuttons.
 	Faz uso:
-		 - ativação e configuração dos pinos pelo uso direto de registradores; e
-		 - função millis() para corrigir efeito bounce.
+  * ativação e configuração dos pinos pelo uso direto de registradores; e 
+  * função millis() para corrigir efeito bounce.
+    * ere
   
   * Tarefa-03 - Comparador Analógico com uso de Registradores
 	Circuito que realiza a comparação de dois valores de voltagem
