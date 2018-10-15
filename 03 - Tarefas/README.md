@@ -17,19 +17,28 @@ Tarefas de SE executadas:
 	do softpot (tripot sensível ao toque). Possui um servo motor controlado por pressionamento de dois botões
 	pushbuttons.
 	Faz uso:
-		 - ativação e configuração dos pinos pelo uso direto de registradores; e
-		 - função millis() para corrigir efeito bounce.
+    * ativação e configuração dos pinos pelo uso direto de registradores; e
+    * função millis() para corrigir efeito bounce.
   
   * Tarefa-03 - Comparador Analógico com uso de Registradores
 	Circuito que realiza a comparação de dois valores de voltagem
 	Faz uso:
-		- ativação e configuração dos pinos pelo uso direto de registradores; e
-		- Softpot - potenciômetro sensível ao toque
+    * ativação e configuração dos pinos pelo uso direto de registradores; e
+    * Softpot - potenciômetro sensível ao toque
+	* Potenciômetro - potenciômetro
   
   * Tarefa-03 - Conversor Lógico
 	Faz uso:
-		- ativação e configuração dos pinos pelo uso direto de registradores; e
+    * ativação e configuração dos pinos pelo uso direto de registradores. 
   
+  * Tarefa-05 - Timer modo Overflow
+    Faz uso:
+    * ativação e configuração dos pinos pelo uso direto de registradores. 
+	
+  * Tarefa-05 - Timer modo CTC
+	Faz uso:
+    * ativação e configuração dos pinos pelo uso direto de registradores. 
+	
   * Tarefa-bonus - servomotor-v3a
 	Circuito que controla o movimento de um dispositivo servo motor.  
 
