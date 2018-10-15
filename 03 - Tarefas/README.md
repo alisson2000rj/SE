@@ -19,17 +19,17 @@ Tarefas de SE executadas:
 	Faz uso:
     * ativação e configuração dos pinos pelo uso direto de registradores; e 
     * função millis() para corrigir efeito bounce.
-    * ere
+    
   
   * Tarefa-03 - Comparador Analógico com uso de Registradores
 	Circuito que realiza a comparação de dois valores de voltagem
 	Faz uso:
-		  * ativação e configuração dos pinos pelo uso direto de registradores; e
-		  * Softpot - potenciômetro sensível ao toque
+    * ativação e configuração dos pinos pelo uso direto de registradores; e
+    * Softpot - potenciômetro sensível ao toque
   
   * Tarefa-03 - Conversor Lógico
 	Faz uso:
-		- ativação e configuração dos pinos pelo uso direto de registradores; e
+    *ativação e configuração dos pinos pelo uso direto de registradores; e
   
   * Tarefa-bonus - servomotor-v3a
 	Circuito que controla o movimento de um dispositivo servo motor.  
