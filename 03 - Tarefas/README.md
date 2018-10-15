@@ -23,8 +23,8 @@ Tarefas de SE executadas:
   * Tarefa-03 - Comparador Analógico com uso de Registradores
 	Circuito que realiza a comparação de dois valores de voltagem
 	Faz uso:
-		* ativação e configuração dos pinos pelo uso direto de registradores; e
-		* Softpot - potenciômetro sensível ao toque
+		  * ativação e configuração dos pinos pelo uso direto de registradores; e
+		  * Softpot - potenciômetro sensível ao toque
   
   * Tarefa-03 - Conversor Lógico
 	Faz uso:
