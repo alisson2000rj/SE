@@ -29,7 +29,16 @@
 	Disponibilizar a abertura do laboratório, além da energização de seu barramento elétrico,
 	de forma remota. Sendo utilizado uma rede de RF with use arduino, tendo sua administração
 	centralizada na sala do monitores.
-	
+
+* Componentes Eletrônicos:
+	Sensores:
+		push button; e
+		LDR.
+		
+	Atuadores:
+		Módulo relé 5v;
+		LED;
+		Lâmpada.
 
 <!--
 By Alisson Cavalcante e Silva
