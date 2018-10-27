@@ -1,16 +1,16 @@
 # Projeto Final da Disciplina de Software Embarcado
 
 ---
-* Proposta: 
+## Proposta: 
 
   Controle Automatizado para Escritórios e Laboratórios por meio de Redes de RF with use Arduino 
 	
-* Motivação: 
+## Motivação: 
 
   * Observação diária da rotina dos monitores responsáveis pelos Laboratórios do Departamento de
   Engenharia da UERJ.
 	
-* Problema:
+## Problema:
 
 	Os monitores precisam:
 	
@@ -24,18 +24,18 @@
 	a interromper a execução de outras atividades/tarefas, e a ter que se dividir para atender
 	a constante  demanda acadêmica.
 	
-* Solução:
+## Solução:
 
 	Disponibilizar a abertura do laboratório, além da energização de seu barramento elétrico,
 	de forma remota. Sendo utilizado uma rede de RF with use arduino, tendo sua administração
 	centralizada na sala do monitores.
 
-* Componentes Eletrônicos:
-	Sensores:
+## Componentes Eletrônicos:
+	**Sensores:**
 		push button; e
 		LDR.
 		
-	Atuadores:
+	**Atuadores:**
 		Módulo relé 5v;
 		LED;
 		Lâmpada.
