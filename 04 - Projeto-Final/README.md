@@ -3,12 +3,12 @@
 ---
 ## Proposta: 
 
-  Controle Automatizado para Escritórios e Laboratórios por meio de Redes de RF with use Arduino 
+	Controle Automatizado para Escritórios e Laboratórios por meio de Redes de RF with use Arduino 
 	
 ## Motivação: 
 
-  Observação diária da rotina dos monitores responsáveis pelos Laboratórios do Departamento de
-  Engenharia da UERJ.
+	Observação diária da rotina dos monitores responsáveis pelos Laboratórios do Departamento de
+	Engenharia da UERJ.
 	
 ## Problema:
 
@@ -31,11 +31,11 @@
 	centralizada na sala do monitores.
 
 ## Componentes Eletrônicos:
-**Sensores:**
+	**Sensores:**
 		push button; e
 		LDR.
 		
-**Atuadores:**
+	**Atuadores:**
 		Módulo relé 5v;
 		LED;
 		Lâmpada.
