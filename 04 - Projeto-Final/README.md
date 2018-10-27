@@ -31,14 +31,14 @@
 	centralizada na sala do monitores.
 
 ## Componentes Eletrônicos:
-	**Sensores:**
-		push button; e
-		LDR.
+	Sensores:
+		a) push button; e
+		b) LDR.
 		
-	**Atuadores:**
-		Módulo relé 5v;
-		LED;
-		Lâmpada.
+	Atuadores:
+		a) Módulo relé 5v;
+		b) LED;
+		c) Lâmpada.
 
 <!--
 By Alisson Cavalcante e Silva
