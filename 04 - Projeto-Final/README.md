@@ -29,6 +29,18 @@
 	Disponibilizar a abertura do laboratório, além da energização de seu barramento elétrico,
 	de forma remota. Sendo utilizado uma rede de RF with use arduino, tendo sua administração
 	centralizada na sala do monitores.
+## Melhorias
+
+	- Multisalto
+		- Protocolo de comunicação
+		- Uso do Monitor Serial
+		- Formato dos comandos : *1*13*1*1
+		- ID por dispositivo
+		- Comando carrega caminho
+		- Cancela comando reconhecido
+	- Interrupção
+		- Timer1 - 20s
+		- Timer2 - 5s
 
 ## Componentes Eletrônicos:
 	Sensores:
