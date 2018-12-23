@@ -29,6 +29,7 @@
 	Disponibilizar a abertura do laboratório, além da energização de seu barramento elétrico,
 	de forma remota. Sendo utilizado uma rede de RF with use arduino, tendo sua administração
 	centralizada na sala do monitores.
+	
 ## Melhorias
 
 	- Multisalto
@@ -43,14 +44,14 @@
 		- Timer2 - 5s
 
 ## Componentes Eletrônicos:
-	Sensores:
-		a) push button; e
-		b) LDR.
 		
 	Atuadores:
 		a) Módulo relé 5v;
 		b) LED;
 		c) Lâmpada.
+		
+## Vídeo no Youtube
+	https://www.youtube.com/watch?v=-eoNIaAJXKQ&t=149s
 
 <!--
 By Alisson Cavalcante e Silva
